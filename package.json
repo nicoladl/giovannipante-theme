@@ -1,0 +1,23 @@
+{
+  "name": "giovannipante",
+  "version": "1.0.0",
+  "description": "Giovanni Panté wp theme",
+  "main": "index.js",
+  "scripts": {
+    "build": "node-sass -rw assets/scss -o assets/css",
+    "watch": "node-sass styles/ -wo ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nicoladl/giovannipante-theme.git"
+  },
+  "author": "Nicola De Lazzari",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nicoladl/giovannipante-theme/issues"
+  },
+  "homepage": "https://github.com/nicoladl/giovannipante-theme#readme",
+  "dependencies": {
+    "node-sass": "^5.0.0"
+  }
+}
