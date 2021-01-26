@@ -10,8 +10,7 @@
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
 <meta name="viewport" content="width=device-width" />
 <title>
-	<?php bloginfo('name'); // show the blog name, from settings ?> |
-	<?php is_front_page() ? bloginfo('description') : wp_title(''); // if we're on the home page, show the description, from the site's settings - otherwise, show the title of the post or page ?>
+	<?php bloginfo('name'); // show the blog name, from settings ?>
 </title>
 
 <link rel="profile" href="http://gmpg.org/xfn/11" />

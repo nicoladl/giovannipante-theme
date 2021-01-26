@@ -1,0 +1,104 @@
+html {
+  font-size: 54px;
+}
+
+* {
+  &::selection {
+		background: $red;
+		color: $white;
+	}
+}
+
+body {
+  font-family: HelveticaNowDisplay-Md, Arial;
+  height: 100vh;
+  overflow: hidden;
+  color: $black;
+  margin: $border;
+
+  @include mq($until: desktop) {
+    margin: calc(#{$border} / 2)
+  }
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.no-padding-right {
+  padding-right: 0;
+}
+
+.nomobile {
+  @include mq($until: desktop) {
+    display: none !important;
+  }
+}
+
+.nodesktop {
+  @include mq($from: desktop) {
+    display: none !important;
+  }
+}
+
+.pbottom {
+  padding-bottom: 0.25rem;
+}
+
+// container
+.container {
+  @include mq($from: desktop) {
+    width: 80%;
+  }
+}
+
+// reveal
+.reveal {
+  height: 5.65vw;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  width: 100%;
+  visibility: hidden;
+
+  @include mq($until: desktop) {
+    height: 10vw;
+  }
+
+  .title & {
+    height: 16vw;
+  }
+
+  .item {
+    @include mq($from: desktop) {
+      line-height: 1.25em;
+      width: 100%;
+      position: absolute;
+      transform: translateY(210px);
+    }
+  }
+
+  &.revealed {
+    visibility: visible;
+  }
+}
+
+.link {
+  @include mq($until: desktop) {
+    // text-decoration: underline;
+  }
+}
+
+
+// brutto
+@include mq($until: desktop) {
+  br {
+    display: none;
+  }
+}
+
+//project
+.width100 {
+  width: 100%;
+}

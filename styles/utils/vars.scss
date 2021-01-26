@@ -1,0 +1,15 @@
+$white: #fff;
+$black: #000;
+$red: #f4512c;
+$grey: #cfdbd5;
+
+$unit: calc(100vw / 12);
+$gutter: 34px;
+$border: 21px;
+
+.grey {
+  color: $grey !important;
+}
+.red {
+  color: $red !important;
+}
