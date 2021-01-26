@@ -1,20 +1,29 @@
-@import url(http://fonts.googleapis.com/css?family=Karla|Quicksand);
-
 body {
-  margin: 36px;
-}
+  margin: 34px; }
 
 .flex-grid {
-  display: flex;
-}
+  display: flex; }
+
 .col {
-  flex: 1;
-}
+  flex: 1; }
 
 .flex-grid-thirds {
   display: flex;
-  justify-content: space-between;
-}
+  justify-content: space-between; }
+
 .flex-grid-thirds .col {
-  width: 32%;
-}
+  width: 32%; }
+
+html {
+  font-size: 54px; }
+
+*::selection {
+  background: #f4512c;
+  color: #fff; }
+
+body {
+  font-family: HelveticaNowDisplay-Md, Arial;
+  height: 100vh;
+  overflow: hidden;
+  color: #000;
+  margin: 21px; }
