@@ -66,7 +66,8 @@ function naked_scripts()  {
 	wp_enqueue_style('MyFontsWebfontsKit.css', get_stylesheet_directory_uri() . '/styles/assets/MyFontsWebfontsKit.css');
 
 	// add theme scripts
-// 	wp_enqueue_script( 'naked', get_template_directory_uri() . '/js/theme.min.js', array(), NAKED_VERSION, true );
+    wp_enqueue_script( 'gsap-js', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js', array(), false, true );
+
 
 }
 add_action( 'wp_enqueue_scripts', 'naked_scripts' ); // Register this fxn and allow Wordpress to call it automatcally in the header
