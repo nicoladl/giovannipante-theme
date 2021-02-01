@@ -1,0 +1,16 @@
+.section {
+  padding-bottom: calc(#{$gutter} * 2);
+
+  .title {
+    font-size: 200px;
+    padding-bottom: $gutter;
+  }
+
+  .text {
+    font-size: 60px;
+  }
+
+  .thumb {
+
+  }
+}

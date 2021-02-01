@@ -4,15 +4,15 @@ html {
 
 * {
   &::selection {
-		background: $red;
-		color: $white;
+      background: $red;
+      color: $white;
 	}
 }
 
 body {
   font-family: HelveticaNowDisplay-Md, Arial;
-  height: 100vh;
-  overflow: hidden;
+  min-height: 100vh;
   color: $black;
-  margin: $border;
+  margin: $gutter;
+  margin-top: calc(90px + #{$headerHeight})
 }
