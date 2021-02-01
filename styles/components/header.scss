@@ -10,7 +10,14 @@ header {
   height: 90px;
   padding: 0 $gutter;
 
+  background-color: $white;
+  font-size: $menuLabel;
+
   h1 {
     flex-basis: 15vw;
+  }
+
+  .menu {
+    width: 75vw;
   }
 }

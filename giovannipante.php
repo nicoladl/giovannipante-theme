@@ -4,6 +4,10 @@
  */
 
 get_header('giovannipante'); // This fxn gets the header.php file and renders it ?>
+
+	<section class='first'>
+	    <?php bloginfo( 'description' ); // Display the blog description, found in General Settings ?>
+	</section>
 	<section>
 		<div id="content" role="main">
             <?php

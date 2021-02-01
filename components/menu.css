@@ -1,0 +1,5 @@
+ul.menu {
+  display: flex;
+  justify-content: space-between; }
+  ul.menu li {
+    font-size: 20px; }

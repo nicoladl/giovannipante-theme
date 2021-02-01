@@ -14,5 +14,17 @@ body {
   min-height: 100vh;
   color: $black;
   margin: $gutter;
-  margin-top: calc(90px + #{$headerHeight})
+  margin-top: $headerHeight;
+}
+
+a {
+  text-decoration: none;
+  color: $black;
+}
+
+section.first {
+  height: calc(100vh - #{$headerHeight} - #{$headerHeight});
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: $headerHeight;
 }

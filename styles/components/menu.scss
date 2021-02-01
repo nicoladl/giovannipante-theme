@@ -1,5 +1,19 @@
-.menu {
-  ul {
-    display: flex;
+ul.menu {
+  display: flex;
+  justify-content: space-between;
+
+  li {
+    font-size: $menuLabel;
+
+    a {
+      color: $grey;
+      transition: color 0.3s ease-out;
+
+      &:hover {
+        color: $black;
+        transition: color 0.3s ease-out;
+      }
+    }
   }
 }
+
