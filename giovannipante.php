@@ -66,6 +66,49 @@ get_header('giovannipante'); // This fxn gets the header.php file and renders it
                     ?>
                 </div>
 	        </div>
+
+	        <div class='section'>
+	            <div class="title">
+                    <h2>Contacts</h2>
+                </div>
+	            <?php
+                    $args = array( 'post_type'=>'social');
+                    $loop = new WP_Query( $args );
+
+                    // Start the loop for your custom query
+                    if($loop->have_posts() ) : while ($loop->have_posts() ) : $loop->the_post();
+
+                    ?>
+                    <div>
+                        <a href="<?php echo wp_strip_all_tags( get_the_content() ); ?>" target="_blank">
+                            <?php the_title(); ?>
+                        </a>
+                    </div>
+                    <?php
+
+                    endwhile;
+                    endif;
+                ?>
+
+                <?php
+                    $args = array( 'post_type'=>'contatti');
+                    $loop = new WP_Query( $args );
+
+                    // Start the loop for your custom query
+                    if($loop->have_posts() ) : while ($loop->have_posts() ) : $loop->the_post();
+
+                    ?>
+                    <div>
+                        <a href="<?php echo wp_strip_all_tags( get_the_content() ); ?>" target="_blank">
+                            <?php the_title(); ?>
+                        </a>
+                    </div>
+                    <?php
+
+                    endwhile;
+                    endif;
+                ?>
+	        </div>
 		</div><!-- #content .site-content -->
 	</section><!-- #primary .content-area -->
     <div class="mouse"></div>
