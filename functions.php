@@ -66,6 +66,7 @@ function naked_scripts()  {
 	wp_enqueue_style('MyFontsWebfontsKit.css', get_stylesheet_directory_uri() . '/styles/assets/MyFontsWebfontsKit.css');
 
 	// add theme scripts
+    wp_enqueue_script( 'custom-js', get_stylesheet_directory_uri() . '/js/custom.js');
     wp_enqueue_script( 'gsap-js', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js', array(), false, true );
 
 

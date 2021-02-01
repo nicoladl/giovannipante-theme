@@ -68,4 +68,6 @@ get_header('giovannipante'); // This fxn gets the header.php file and renders it
 	        </div>
 		</div><!-- #content .site-content -->
 	</section><!-- #primary .content-area -->
+    <div class="mouse"></div>
 <?php get_footer('giovannipante'); // This fxn gets the footer.php file and renders it ?>
+
