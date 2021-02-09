@@ -1,0 +1,15 @@
+.project {
+  padding-bottom: 50px; }
+  .project .title {
+    font-size: 50px;
+    padding-bottom: 15px; }
+  .project .thumb {
+    padding-bottom: 15px; }
+    .project .thumb img {
+      width: 100%;
+      height: auto; }
+  .project .metadata {
+    display: flex;
+    font-size: 20px; }
+    .project .metadata .tags {
+      padding-right: 20px; }

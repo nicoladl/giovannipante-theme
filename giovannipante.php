@@ -6,7 +6,11 @@
 get_header('giovannipante'); // This fxn gets the header.php file and renders it ?>
 
 	<section class='first'>
-	    <?php bloginfo( 'description' ); // Display the blog description, found in General Settings ?>
+	    <div class='avatar'>
+	        <p>
+	            <?php echo html_entity_decode(get_bloginfo('description')); // Display the blog description, found in General Settings ?>
+	        </p>
+	    </div>
 	</section>
 	<section>
 		<div id="content" role="main">
@@ -51,11 +55,14 @@ get_header('giovannipante'); // This fxn gets the header.php file and renders it
                                 <?php the_title(); ?>
                             </h2>
                             <div class="thumb">
-                                <? if( has_post_thumbnail( $post_id ) ): ?>
-                                    <img title="image title" alt="thumb image" class="wp-post-image" src="<?=wp_get_attachment_url( get_post_thumbnail_id() ); ?>">
-                                <? endif; ?>
+                                <?php
+                                $image = get_field('images');
+                                if( !empty( $image ) ): ?>
+                                    <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+                                <?php endif; ?>
                             </div>
-                            <div class="text">
+                            <div class="metadata">
+                                <p class="tags"><?php the_field('tags'); ?></p>
                                 <?php the_content(); ?>
                             </div>
                         </div>
