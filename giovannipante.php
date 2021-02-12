@@ -54,13 +54,8 @@ get_header('giovannipante'); // This fxn gets the header.php file and renders it
                             <h3 class="title">
                                 <?php the_title(); ?>
                             </h2>
-                            <div class="thumb">
-                                <?php
-                                $image = get_field('images');
-                                if( !empty( $image ) ): ?>
-                                    <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
-                                <?php endif; ?>
-                            </div>
+                            <?php $galleryId = get_field('galleryId'); ?>
+                            <?php echo do_shortcode('[sp_wpcarousel id="'.$galleryId.'"]'); ?>
                             <div class="metadata">
                                 <p class="tags"><?php the_field('tags'); ?></p>
                                 <?php the_content(); ?>
