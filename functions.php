@@ -63,7 +63,7 @@ function naked_scripts()  {
 	wp_enqueue_style('style.css', get_stylesheet_directory_uri() . '/style.css');
 
 	// load custom fonts
-	wp_enqueue_style('MyFontsWebfontsKit.css', get_stylesheet_directory_uri() . '/styles/assets/MyFontsWebfontsKit.css');
+	wp_enqueue_style('MyFontsWebfontsKit.css', get_stylesheet_directory_uri() . '/assets/MyFontsWebfontsKit.css');
 
 	// add theme scripts
     wp_enqueue_script( 'custom-js', get_stylesheet_directory_uri() . '/js/custom.js');
